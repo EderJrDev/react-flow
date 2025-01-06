@@ -29,7 +29,7 @@ const onConnectEnd = (event) => console.log('on connect end', event);
 
 const CustomInput = () => (
   <>
-    <div>Only connectable with B</div>
+    <div className='border border-gray-400 rounded-md p-3'>Only connectable with B</div>
     <Handle type="source" position={Position.Right} />
   </>
 );
@@ -37,7 +37,7 @@ const CustomInput = () => (
 const CustomNode = ({ id }) => (
   <>
     <Handle type="target" position={Position.Left} />
-    <div>{id}</div>
+    <div className='border border-gray-400 rounded-md p-3'>{id}</div>
     <Handle type="source" position={Position.Right} />
   </>
 );
